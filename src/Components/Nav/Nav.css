@@ -1,0 +1,37 @@
+.navbar{
+    width: 100dvw;
+    height: 15dvh;
+    background-color: #ffffff;
+}
+.navitems{
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 12.9%;
+}
+.navlinks{
+    width: 25.8%;
+}
+.searchbar{
+    width: 46.5%;
+}
+.btn{
+    width: 5%;
+}
+.navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navlinks ul a{
+    text-decoration: none;
+}
+.btn{
+    display: flex;
+    gap: 14px;
+}

@@ -1,0 +1,36 @@
+
+#anouncementbar{
+    width: 100%;
+    min-height: 25px;
+    background-color: #000000;
+}
+.anouncement{
+     width: 60%;
+    height: 100%;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: 5%;
+    color: #FFFFFF;
+}
+.anouncement p a{
+color: #FFFFFF;
+border: none;
+}
+.anouncement p {
+    margin: 0;
+}
+.anouncement img {
+    width: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width:780px) {
+    .anouncement{
+        width: 90%;
+        margin: 0% auto;
+        padding: 0 15px;
+    }
+}
