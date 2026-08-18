@@ -1,7 +1,7 @@
 
 #anouncementbar{
     width: 100%;
-    min-height: 25px;
+    min-height: 18px;
     background-color: #000000;
 }
 .anouncement{
@@ -22,9 +22,11 @@ border: none;
 }
 .anouncement p {
     margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 .anouncement img {
-    width: 20px;
+    height: 15px;
     cursor: pointer;
 }
 @media screen and (max-width:780px) {

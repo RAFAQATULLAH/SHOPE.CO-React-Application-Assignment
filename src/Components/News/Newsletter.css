@@ -1,0 +1,159 @@
+.newsletter {
+  width: 100%;
+  max-width: 1020px;
+
+  margin: 0 auto;
+
+  padding: 32px 40px;
+
+  background: #000;
+
+  border-radius: 16px;
+
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.newsletter h2 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: 27px;
+  font-weight: 900;
+
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.newsletter__form {
+  width: 280px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+}
+
+.newsletter__input-wrapper {
+  width: 100%;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  padding: 0 12px;
+
+  box-sizing: border-box;
+}
+
+.newsletter__icon {
+  color: #888;
+  font-size: 13px;
+
+  margin-right: 8px;
+}
+
+.newsletter__input-wrapper input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  font-size: 11px;
+  color: #111;
+}
+
+.newsletter__input-wrapper input::placeholder {
+  color: #aaa;
+}
+
+.newsletter__form button {
+  width: 100%;
+  height: 32px;
+
+  border: 0;
+  border-radius: 20px;
+
+  background: #fff;
+  color: #111;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.newsletter__form button:hover {
+  background: #e9e9e9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .newsletter {
+    margin: 0 20px;
+
+    padding: 28px;
+  }
+
+  .newsletter__content {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 25px;
+  }
+
+  .newsletter h2 {
+    font-size: 25px;
+  }
+
+  .newsletter__form {
+    width: 100%;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .newsletter {
+    margin: 0 16px;
+
+    padding: 25px 20px;
+
+    border-radius: 14px;
+  }
+
+  .newsletter h2 {
+    font-size: 22px;
+  }
+
+  .newsletter__form {
+    width: 100%;
+  }
+}

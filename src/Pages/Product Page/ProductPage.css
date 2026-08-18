@@ -1,0 +1,484 @@
+/* ========================================
+   PRODUCT PAGE
+======================================== */
+
+.product-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 25px 30px 60px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+
+/* ========================================
+   BREADCRUMB
+======================================== */
+
+.product-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 25px;
+
+  font-size: 13px;
+  color: #777;
+}
+
+.product-breadcrumb span {
+  color: #aaa;
+}
+
+
+/* ========================================
+   MAIN PRODUCT SECTION
+======================================== */
+
+.product-main {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 40px;
+}
+
+
+/*
+   ProductGallery
+   ProductInfo
+   each have their own width
+*/
+
+.product-main > * {
+  min-width: 0;
+}
+
+
+/* ========================================
+   PRODUCT TABS
+======================================== */
+
+.product-tabs {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 60px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-tab {
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  padding: 18px 10px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.product-tab.active {
+  color: #111;
+  font-weight: 600;
+}
+
+.product-tab.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: -1px;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: #111;
+}
+
+
+/* ========================================
+   REVIEWS
+======================================== */
+
+.reviews {
+  width: 100%;
+
+  padding-top: 25px;
+}
+
+.reviews-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.reviews-title {
+  display: flex;
+  align-items: baseline;
+
+  gap: 6px;
+}
+
+.reviews-title h2 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.reviews-title span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   REVIEW ACTIONS
+======================================== */
+
+.reviews-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.filter-button,
+.sort-button,
+.write-review-button {
+  border: none;
+
+  cursor: pointer;
+
+  font-size: 13px;
+}
+
+.filter-button {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #f3f3f3;
+}
+
+.sort-button {
+  height: 40px;
+
+  padding: 0 16px;
+
+  border-radius: 20px;
+
+  background: #f3f3f3;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.write-review-button {
+  height: 40px;
+
+  padding: 0 20px;
+
+  border-radius: 20px;
+
+  background: #000;
+
+  color: #fff;
+
+  font-weight: 600;
+}
+
+
+/* ========================================
+   REVIEWS GRID
+======================================== */
+
+.reviews-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.review-card {
+  min-height: 160px;
+
+  padding: 20px;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.review-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+.review-stars {
+  color: #ffc633;
+
+  font-size: 16px;
+
+  letter-spacing: 1px;
+}
+
+.review-menu {
+  border: none;
+
+  background: transparent;
+
+  color: #777;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+.review-name {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-verified {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background: #00a63c;
+
+  color: white;
+
+  font-size: 9px;
+}
+
+.review-text {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.review-date {
+  margin: 12px 0 0;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+
+/* ========================================
+   LOAD MORE
+======================================== */
+
+.load-more {
+  display: block;
+
+  margin: 30px auto 0;
+
+  padding: 12px 28px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 25px;
+
+  background: white;
+
+  color: #111;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.load-more:hover {
+  background: #f5f5f5;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .product-page {
+    padding: 20px;
+  }
+
+  .product-main {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  /*
+     Gallery and info become full width
+  */
+
+  .product-main > * {
+    width: 100%;
+  }
+
+  .product-tabs {
+    margin-top: 40px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .product-page {
+    padding: 15px 16px 40px;
+  }
+
+  .product-breadcrumb {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+
+    gap: 5px;
+
+    white-space: nowrap;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .product-breadcrumb::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  /* Tabs */
+
+  .product-tabs {
+    margin-top: 30px;
+  }
+
+  .product-tab {
+    padding: 14px 5px;
+
+    font-size: 11px;
+  }
+
+
+  /* Reviews */
+
+  .reviews-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .reviews-actions {
+    width: 100%;
+  }
+
+  .write-review-button {
+    margin-left: auto;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .review-card {
+    padding: 16px;
+  }
+}
+
+
+/* ========================================
+   VERY SMALL SCREENS
+======================================== */
+
+@media (max-width: 400px) {
+
+  .product-page {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .reviews-actions {
+    gap: 6px;
+  }
+
+  .filter-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sort-button {
+    height: 36px;
+
+    padding: 0 12px;
+  }
+
+  .write-review-button {
+    height: 36px;
+
+    padding: 0 14px;
+
+    font-size: 11px;
+  }
+}

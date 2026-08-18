@@ -1,0 +1,156 @@
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.product-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  width: 100%;
+  min-width: 0;
+
+  background: #fff;
+  border-radius: 16px;
+
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.p-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+
+  background: #f2f2f2;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.p-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   PRODUCT INFO
+========================= */
+
+.p-heading h1 {
+  font-size: 16px;
+  font-weight: 600;
+
+  margin: 12px 0 5px;
+
+  color: #111;
+
+  line-height: 1.3;
+}
+
+.p-rating p {
+  font-size: 14px;
+  color: #f5a623;
+
+  margin: 0 0 7px;
+
+  line-height: 1.2;
+}
+
+.p-price p {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111;
+
+  margin: 0;
+
+  line-height: 1.3;
+}
+
+.p-price s {
+  color: #999;
+  font-weight: 400;
+
+  margin-left: 6px;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.star-filled {
+  fill: #f5a623;
+  stroke: #f5a623;
+}
+
+.star-empty {
+  fill: none;
+  stroke: #d1d5db;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .p-heading h1 {
+    font-size: 15px;
+  }
+
+  .p-rating p {
+    font-size: 13px;
+  }
+
+  .p-price p {
+    font-size: 15px;
+  }
+}

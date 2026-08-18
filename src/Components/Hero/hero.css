@@ -1,0 +1,133 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F2F0F1;
+  padding: 20px 80px;
+  gap: 40px;
+  margin-top: 1%;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.heroitems {
+  flex: 1;
+  min-width: 320px;
+}
+
+.sec1 h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #0D0D0D;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+
+.sec1 p {
+  font-size: 16px;
+  color: #6C6C6C;
+  line-height: 1.6;
+  max-width: 470px;
+  margin-bottom: 32px;
+}
+
+/* Shop Now button wrapper */
+.shopnowbtn {
+  margin-bottom: 48px;
+}
+
+.shopnowbtn button {
+  background-color: #0D0D0D;
+  color: #fff;
+  border: none;
+  padding: 16px 54px;
+  border-radius: 62px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.shopnowbtn button:hover {
+  background-color: #2c2c2c;
+}
+
+/* Stats section */
+.performence {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.performence img {
+  height: 48px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.performence h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0D0D0D;
+  margin-bottom: 4px;
+}
+
+.performence p {
+  font-size: 14px;
+  color: #6C6C6C;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Right side image */
+.sec2 {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.sec2 img {
+  width: 100%;
+  max-width: 550px;
+  height: 100vh;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  .sec1 h1 {
+    font-size: 40px;
+  }
+
+  .sec1 p {
+    max-width: 100%;
+  }
+
+  .performence {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec1 h1 {
+    font-size: 32px;
+  }
+
+  .performence {
+    gap: 16px;
+  }
+
+  .performence h2 {
+    font-size: 24px;
+  }
+}

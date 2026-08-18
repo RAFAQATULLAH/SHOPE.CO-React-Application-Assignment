@@ -1,0 +1,186 @@
+.customers {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.customers__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.customers__header h2 {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+
+  color: #000;
+  letter-spacing: -1px;
+}
+
+.customers__arrows {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.customers__arrows button {
+  border: 0;
+  background: transparent;
+
+  font-size: 25px;
+  color: #111;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================
+   TESTIMONIAL SLIDER
+========================= */
+
+.customers__slider {
+  display: flex;
+  gap: 20px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  padding-bottom: 5px;
+}
+
+.customers__slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================
+   TESTIMONIAL CARD
+========================= */
+
+.testimonial-card {
+  flex: 0 0 calc((100% - 40px) / 3);
+
+  min-height: 155px;
+
+  padding: 20px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.testimonial-stars {
+  color: #ffc12b;
+
+  font-size: 17px;
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #111;
+
+  margin-bottom: 8px;
+}
+
+.verified {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  background: #00a63c;
+  color: white;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.testimonial-card p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .customers {
+    padding: 40px 20px;
+  }
+
+  .customers__header h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .customers {
+    padding: 35px 16px;
+  }
+
+  .customers__header {
+    margin-bottom: 20px;
+  }
+
+  .customers__header h2 {
+    font-size: 23px;
+  }
+
+  .customers__arrows {
+    gap: 12px;
+  }
+
+  .customers__arrows button {
+    font-size: 21px;
+  }
+
+  .testimonial-card {
+    flex: 0 0 85%;
+    min-height: 160px;
+
+    padding: 18px;
+  }
+}
