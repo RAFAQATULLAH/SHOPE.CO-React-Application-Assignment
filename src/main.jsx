@@ -40,7 +40,7 @@ function Home(){
 
 createRoot(document.getElementById('root')).render(
   <>
-  <BrowserRouter>
+  <BrowserRouter basename="/SHOPE.CO-React-Application-Assignment">
 <CartProvider>
       <Routes>
         <Route
