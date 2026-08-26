@@ -17,6 +17,9 @@ import {BrowserRouter,Routes,Route,} from "react-router-dom";
 import CategoryPage from './Pages/Category/CategoryPage'
 import { CartProvider } from "./context/CartContext";
 import Cart from './Pages/Cart/Cart'
+import Items from "../data"
+
+
 
 function Home(){
   return (

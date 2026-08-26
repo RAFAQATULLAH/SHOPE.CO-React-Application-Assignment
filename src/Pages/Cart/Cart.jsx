@@ -1,19 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-
+import "./Cart.css";
 import CartItem from "../../Components/Cart/CartItem";
 import OrderSummary from "../../Components/Cart/OrderSummary";
 import CartEmpty from "../../Components/Cart/CartEmpty";
+import Nav from "../../Components/Nav/Nav"
+import Newsletters from "../../Components/News/Newsletters"
+import Footer from "../../Components/Footer/Footer"
+import { useCart } from "../../context/CartContext"
 
-import { useCart } from "../../context/CartContext";
-
-import "./Cart.css";
 
 function Cart() {
   const {cart} = useCart();
 
   return (
+    <>
+    <Nav/>
     <div className="cart-page">
 
       {/* Breadcrumb */}
@@ -54,7 +57,11 @@ function Cart() {
       )}
 
     </div>
+    <Newsletters/>
+    <Footer/>
+    </>
   );
+  
 }
 
 export default Cart;

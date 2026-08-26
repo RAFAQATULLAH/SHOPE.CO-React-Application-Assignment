@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import "./ProductInfo.css";
 
-const ProductInfo = () => {
+
+const ProductInfo = ({product}) => {
   const {addToCart}  = useCart();
-  const [selectedColor, setSelectedColor] = useState(0);
+  const [selectedColor, setSelectedColor] = useState();
   const [selectedSize, setSelectedSize] = useState("Large");
   const [quantity, setQuantity] = useState(1);
 

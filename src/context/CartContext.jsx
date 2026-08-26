@@ -155,6 +155,5 @@ export function useCart() {
       "useCart must be used inside CartProvider"
     );
   }
-
   return context;
 }

@@ -1,0 +1,200 @@
+.order-summary {
+  border: 1px solid #e5e5e5;
+
+  border-radius: 15px;
+
+  padding: 20px 17px;
+
+  background: white;
+}
+
+.order-summary h2 {
+  margin: 0 0 20px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Rows */
+
+.summary-row {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  font-size: 13px;
+}
+
+.summary-row span {
+  color: #777;
+}
+
+.summary-row strong {
+  color: #111;
+}
+
+.discount-value {
+  color: #ff3333 !important;
+}
+
+/* Divider */
+
+.summary-divider {
+  height: 1px;
+
+  background: #eeeeee;
+
+  margin: 20px 0;
+}
+
+/* Total */
+
+.summary-total {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.summary-total span {
+  font-size: 14px;
+}
+
+.summary-total strong {
+  font-size: 18px;
+}
+
+/* Promo */
+
+.promo-container {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 5px;
+}
+
+.promo-input {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  flex: 1;
+
+  background: #f1f1f1;
+
+  border-radius: 25px;
+
+  padding: 0 13px;
+
+  color: #999;
+}
+
+.promo-input input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  padding: 10px 0;
+
+  font-size: 12px;
+}
+
+.promo-container > button {
+  border: none;
+
+  background: #111;
+
+  color: white;
+
+  padding: 0 22px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.promo-container > button:hover {
+  background: #333;
+}
+
+/* Promo Message */
+
+.promo-success,
+.promo-error {
+  margin: 7px 0 0 10px;
+
+  font-size: 10px;
+}
+
+.promo-success {
+  color: #00a63c;
+}
+
+.promo-error {
+  color: #ff3333;
+}
+
+/* Checkout */
+
+.checkout-button {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  border: none;
+
+  background: #111;
+
+  color: white;
+
+  padding: 12px;
+
+  margin-top: 16px;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+.checkout-button:hover {
+  background: #333;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+  .promo-container {
+    flex-direction: column;
+  }
+
+  .promo-input {
+    min-height: 40px;
+  }
+
+  .promo-container > button {
+    min-height: 40px;
+  }
+
+}

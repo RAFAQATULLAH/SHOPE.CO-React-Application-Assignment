@@ -1,49 +1,52 @@
 import React, { useState } from "react";
-
 import "./ProductGallery.css";
 
-const images = [
-  "/images/product-1.jpg",
-  "/images/product-2.jpg",
-  "/images/product-model.jpg",
-];
+const ProductGallery = ({ product }) => {
 
-const ProductGallery = () => {
-  const [selectedImage, setSelectedImage] = useState(images[0]);
+    const images = [
+        product.images.img1,
+        product.images.img2,
+        product.images.img3
+    ];
 
-  return (
-    <div className="product-gallery">
+    const [selectedImage, setSelectedImage] = useState(images[0]);
 
-      <div className="product-thumbnails">
+    return (
+        <div className="product-gallery">
 
-        {images.map((image, index) => (
-          <button
-            key={image}
-            className={`product-thumbnail ${
-              selectedImage === image ? "active" : ""
-            }`}
-            onClick={() => setSelectedImage(image)}
-          >
-            <img
-              src={image}
-              alt={`Product ${index + 1}`}
-            />
-          </button>
-        ))}
+            <div className="product-thumbnails">
 
-      </div>
+                {images.map((image, index) => (
 
-      <div className="product-main-image">
+                    <button
+                        key={index}
+                        className={`product-thumbnail ${
+                            selectedImage === image ? "active" : ""
+                        }`}
+                        onClick={() => setSelectedImage(image)}
+                    >
+                        <img
+                            src={image}
+                            alt={`Product ${index + 1}`}
+                        />
+                    </button>
 
-        <img
-          src={selectedImage}
-          alt="One Life Graphic T-Shirt"
-        />
+                ))}
 
-      </div>
+            </div>
 
-    </div>
-  );
+
+            <div className="product-main-image">
+
+                <img
+                    src={selectedImage}
+                    alt={product.name}
+                />
+
+            </div>
+
+        </div>
+    );
 };
 
 export default ProductGallery;

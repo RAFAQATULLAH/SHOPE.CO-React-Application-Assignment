@@ -8,6 +8,7 @@ import Nav from "../../Components/Nav/Nav"
 import Announcement from "../../Components/anouncementbar/announcmentbar"
 import Newsletter from "../../Components/News/Newsletters"
 import Footer from "../../Components/Footer/Footer"
+import Items from "../../../data";
 
 const Products = [
   {
@@ -88,7 +89,7 @@ function CategoryPage() {
   return (
     <>
     <Announcement/>
-    <Nav/>
+    <Nav />
     <div className="category-page">
 
       <CategoryHeader />
@@ -132,7 +133,7 @@ function CategoryPage() {
           </div>
 
           {/* Your existing Card component */}
-          <Card Products={Products} />
+          <Card Products={Items} />
 
           <Pagination />
 

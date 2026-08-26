@@ -1,10 +1,9 @@
-import Hero from "../../assets/heroimg.jpg";
 import "./productcard.css";
 import { StarIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Card({ Products }) {
+function Card({Products}) {
   return (
     <div className="product-grid">
 
@@ -18,7 +17,7 @@ function Card({ Products }) {
           <div className="product-card">
 
             <div className="p-img">
-              <img src={Hero} alt={p.name} />
+              <img src={p.images.img1} alt={p.name} />
             </div>
 
             <div className="p-heading">

@@ -10,9 +10,20 @@ import Nav from "../../Components/Nav/Nav";
 import Products from "../../Components/mainproducts/products";
 import Newsletter from "../../Components/News/Newsletters";
 import Footer from "../../Components/Footer/Footer";
-
+import { useParams } from "react-router-dom";
+import Items from "../../../data";
 
 const ProductPage = () => {
+  const { id } = useParams();
+
+    const displayproduct = Items.find(
+        (item) => item.id === Number(id)
+    );
+
+    if (!displayproduct) {
+        return <h2>Product not found</h2>;
+    }
+
   return (
     <>
     <Anouncementbar/>
@@ -30,10 +41,9 @@ const ProductPage = () => {
       </div>
 
       <section className="product-main">
+        <ProductGallery product={displayproduct}/>
 
-        <ProductGallery />
-
-        <ProductInfo />
+        <ProductInfo product={displayproduct}/>
 
       </section>
 

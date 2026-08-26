@@ -21,8 +21,8 @@ const navigate = useNavigate();
             <ul>
                 <li>
                     
-                    <select name="shop" id="shop" defaultValue="Shop" onChange={(e) => navigate(e.target.value)}>
-                        <option value="shop" >Shop</option>
+                    <select name="shop" id="shop" defaultValue="" onChange={(e) => navigate(e.target.value)}>
+                        <option value="/" >Shop</option>
                         <option value="/Category">
                           Category  
                         </option>
