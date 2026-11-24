@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import FilterSection from "./FilterSection";
-import "./CategorySidebar.css";
-
-function CategorySidebar() {
-  const categories = [
-    "T-shirts",
-    "Shorts",
-    "Shirts",
-    "Hoodies",
-    "Jeans",
-  ];
-
-  const dressStyles = [
-    "Casual",
-    "Formal",
-    "Party",
-    "Gym",
-  ];
-
-  const colors = [
-    "#00A63C",
-    "#E60023",
-    "#FFD600",
-    "#FF7A00",
-    "#009FE3",
-    "#7B2CBF",
-    "#FF69B4",
-    "#111111",
-    "#AAAAAA",
-    "#FFFFFF",
-  ];
-
-  const sizes = [
-    "XX-Small",
-    "X-Small",
-    "Small",
-    "Medium",
-    "Large",
-    "X-Large",
-    "XX-Large",
-    "3X-Large",
-    "4X-Large",
-  ];
-=======
 
 import React from "react";
 import "./CategorySidebar.css";
@@ -85,7 +39,6 @@ function CategorySidebar({
 
     return colorMap[normalizedColor] || color;
   };
->>>>>>> de2a868 (Made backend and update cart and profile)
 
   return (
     <aside className="category-sidebar">
@@ -94,17 +47,7 @@ function CategorySidebar({
         <span>☷</span>
       </div>
 
-<<<<<<< HEAD
-      <FilterSection
-        title="Category"
-        items={categories}
-      />
-
-      {/* Price */}
-
-=======
       {/* Price Filter */}
->>>>>>> de2a868 (Made backend and update cart and profile)
       <div className="filter-section">
         <div className="filter-title">
           <h3>Price</h3>
@@ -112,24 +55,6 @@ function CategorySidebar({
         </div>
 
         <div className="price-values">
-<<<<<<< HEAD
-          <span>$50</span>
-          <span>$500</span>
-        </div>
-
-        <div className="price-slider">
-          <div className="slider-track"></div>
-
-          <div className="slider-progress"></div>
-
-          <span className="slider-dot left"></span>
-          <span className="slider-dot right"></span>
-        </div>
-      </div>
-
-      {/* Colors */}
-
-=======
           <input
             type="number"
             placeholder="Min"
@@ -151,7 +76,6 @@ function CategorySidebar({
       </div>
 
       {/* Color Filter */}
->>>>>>> de2a868 (Made backend and update cart and profile)
       <div className="filter-section">
         <div className="filter-title">
           <h3>Colors</h3>
@@ -159,14 +83,6 @@ function CategorySidebar({
         </div>
 
         <div className="colors-grid">
-<<<<<<< HEAD
-          {colors.map((color, index) => (
-            <button
-              key={index}
-              className="color-option"
-              style={{ backgroundColor: color }}
-              aria-label={`Color ${index + 1}`}
-=======
           {colors.map((color) => (
             <button
               key={color}
@@ -185,18 +101,12 @@ function CategorySidebar({
               aria-label={color}
               title={color}
               aria-pressed={selectedColor === color}
->>>>>>> de2a868 (Made backend and update cart and profile)
             />
           ))}
         </div>
       </div>
 
-<<<<<<< HEAD
-      {/* Size */}
-
-=======
       {/* Size Filter */}
->>>>>>> de2a868 (Made backend and update cart and profile)
       <div className="filter-section">
         <div className="filter-title">
           <h3>Size</h3>
@@ -205,9 +115,6 @@ function CategorySidebar({
 
         <div className="sizes-grid">
           {sizes.map((size) => (
-<<<<<<< HEAD
-            <button key={size} className="size-option">
-=======
             <button
               key={size}
               type="button"
@@ -221,36 +128,21 @@ function CategorySidebar({
               }
               aria-pressed={selectedSize === size}
             >
->>>>>>> de2a868 (Made backend and update cart and profile)
               {size}
             </button>
           ))}
         </div>
       </div>
 
-<<<<<<< HEAD
-      <FilterSection
-        title="Dress Style"
-        items={dressStyles}
-      />
-
-      <button className="apply-filter">
-        Apply Filter
-=======
       <button
         type="button"
         className="apply-filter"
         onClick={onClearFilters}
       >
         Clear Filters
->>>>>>> de2a868 (Made backend and update cart and profile)
       </button>
     </aside>
   );
 }
 
-<<<<<<< HEAD
 export default CategorySidebar;
-=======
-export default CategorySidebar;
->>>>>>> de2a868 (Made backend and update cart and profile)

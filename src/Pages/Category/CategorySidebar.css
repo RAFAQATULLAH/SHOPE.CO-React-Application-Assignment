@@ -186,8 +186,6 @@
 
 .filter-item:hover {
   color: #111;
-<<<<<<< HEAD
-=======
 }
 /* Price inputs */
 .price-values {
@@ -220,5 +218,4 @@
 /* Clear filters */
 .apply-filter {
   cursor: pointer;
->>>>>>> de2a868 (Made backend and update cart and profile)
 }

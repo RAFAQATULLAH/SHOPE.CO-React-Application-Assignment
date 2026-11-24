@@ -1,19 +1,8 @@
 {
-<<<<<<< HEAD
-  "name": "landing-page",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-=======
   "name": "shop.co",
   "version": "0.0.0",
   "private": true,
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.",
-  "license": "ISC",
-  "author": "",
   "type": "module",
-  "main": "vite.config.js",
->>>>>>> de2a868 (Made backend and update cart and profile)
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,18 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "lucide-react": "^1.31.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-=======
     "@reduxjs/toolkit": "^2.13.0",
     "axios": "^1.21.0",
     "lucide-react": "^1.31.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-redux": "^9.3.1",
->>>>>>> de2a868 (Made backend and update cart and profile)
     "react-router-dom": "^7.18.2"
   },
   "devDependencies": {

@@ -1,13 +1,6 @@
 import React from "react";
 import "./Pagination.css";
 
-<<<<<<< HEAD
-function Pagination() {
-  return (
-    <div className="pagination">
-
-      <button className="pagination-prev">
-=======
 function Pagination({ currentPage, totalPages, onPageChange }) {
   const getPageNumbers = () => {
     const pages = [];
@@ -47,26 +40,10 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
         disabled={currentPage === 1}
         onClick={() => onPageChange(currentPage - 1)}
       >
->>>>>>> de2a868 (Made backend and update cart and profile)
         ← Previous
       </button>
 
       <div className="pagination-numbers">
-<<<<<<< HEAD
-        <button className="active-page">1</button>
-        <button>2</button>
-        <button>3</button>
-        <span>...</span>
-        <button>8</button>
-        <button>9</button>
-        <button>10</button>
-      </div>
-
-      <button className="pagination-next">
-        Next →
-      </button>
-
-=======
         {getPageNumbers().map((page, index) =>
           page === "..." ? (
             <span key={`dots-${index}`}>...</span>
@@ -89,7 +66,6 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
       >
         Next →
       </button>
->>>>>>> de2a868 (Made backend and update cart and profile)
     </div>
   );
 }

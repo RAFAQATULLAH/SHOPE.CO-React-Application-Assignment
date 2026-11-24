@@ -1,5 +1,13 @@
 # React + Vite
 
+## Deploying to Vercel
+
+Import this repository into Vercel with the project root set to this folder. Vercel can use the existing `build` script; the output directory is `dist`.
+
+Add `VITE_API_URL` in the Vercel project’s Environment Variables for Production (and Preview if needed). Set it to the deployed backend’s origin, without a trailing slash, for example `https://api.example.com`. Vite embeds `VITE_` variables in the client bundle, so this value must be a public API URL and must not contain secrets. Redeploy after changing it.
+
+The `vercel.json` rewrite sends client-side routes to the Vite entry page, so routes such as `/cart` and `/product/:id` work when opened directly.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
