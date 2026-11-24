@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {
   createContext,
   useContext,
@@ -157,3 +158,16 @@ export function useCart() {
   }
   return context;
 }
+=======
+import React from 'react'
+
+const CartContext = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default CartContext
+>>>>>>> de2a868 (Made backend and update cart and profile)

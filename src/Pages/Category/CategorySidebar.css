@@ -186,4 +186,39 @@
 
 .filter-item:hover {
   color: #111;
+<<<<<<< HEAD
+=======
+}
+/* Price inputs */
+.price-values {
+  display: flex;
+  gap: 10px;
+}
+
+.price-values input {
+  width: 50%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* Selected color */
+.color-option.selected-color {
+  outline: 2px solid #000;
+  outline-offset: 3px;
+}
+
+/* Selected size */
+.size-option.selected-size {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Clear filters */
+.apply-filter {
+  cursor: pointer;
+>>>>>>> de2a868 (Made backend and update cart and profile)
 }

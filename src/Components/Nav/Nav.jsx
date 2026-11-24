@@ -3,9 +3,18 @@ import { ShoppingCartIcon , User , Menu , Search} from "lucide-react"
 import "./Nav.css"
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 
 function Nav(){
 const navigate = useNavigate();
+=======
+import { useSelector } from "react-redux";
+
+function Nav(){
+const navigate = useNavigate();
+const { user } = useSelector((state) => state.auth);
+
+>>>>>>> de2a868 (Made backend and update cart and profile)
    return (
    <>
     <div id="navbar">
@@ -47,9 +56,17 @@ const navigate = useNavigate();
                 <ShoppingCartIcon/>
             </div>
             </Link>
+<<<<<<< HEAD
             <div className="user">
                 <User/>
             </div>
+=======
+            <Link to={user?"/profile":"/login"} >
+             <div className="user">
+                <User/>
+            </div>
+            </Link>
+>>>>>>> de2a868 (Made backend and update cart and profile)
         </div>
         </div>
     </div>
